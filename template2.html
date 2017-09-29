@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!--title-->
+    <title>Damzinium Template</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CUSTOM CSS FILES-->
+
+    <!--i used compiled.min.css because the other one (compiled...4.4.0) didn't work. same thing happened in the Scripts section-->
+    <link href="css/compiled.min.css" rel="stylesheet">
+    <!-- <link rel='stylesheet' id='compiled.css-css'  href='css/compiled.min474a.css?ver=4.4.0' type='text/css' media='all' /> -->
+</head>
+
+
+<body class="fixed-sn"><!--fixed-sn gives some kind of spacing after the main nav so that the content doesnt get buried under-->
+
+    <!--THE FOLLOWING CODE IS ADAPTED FROM https://mdbootstrap.com/layout/bootstrap-navigation/#f-s-f-n -->
+    <!-- I had lots of trouble making the side nav fix itself directly under the main nav, but its still cool as it is right?-->
+    <!--Double navigation-->
+    <header>
+
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav fixed sn-bg-1 custom-scrollbar">
+            <!-- Profile -->
+            <li>                
+                <div class="waves-light yellow">
+                    <!--profile icon-->
+                    <div></div>
+                    <!--username and log options-->
+                    <div></div>
+                </div>
+            </li>
+            <!--/. Profile -->
+
+            <!--PERHAPS YOU CAN CHANGE THIS WITH A MUCH MORE STYLISH SEARCH?-->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+
+            <!--THESE BECOME THE COLLEGES, THEN DEPARTMENTS. IM THINKING IF WE ADD AN EXTRA LAYER (COURSES) DOWN HERE, IT MIGHT BECOME TOO LONG?-->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Submit blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Submit listing</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Registration form</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">For bloggers</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">For authors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Introduction</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+            <div class="sidenav-bg mask-strong"></div>
+        </ul>
+        <!--/. Sidebar navigation -->
+        
+        <!-- Navbar -->
+        <!--OKAY NOW THE NOTORIOUS NAVBAR. PLEASE MAKE THE LOGO CHANGE TO ITS SMALLER COUNTERPART (img/logo_trans.png) ON SMALLER SCREENS-->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav navbar-dark green darken-4">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+            
+            <!-- Breadcrumb-->         
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_trans_full.png" height="80" class="d-inline-block align-top" alt="">
+            </a>
+            <ul class="nav navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!--/.Double navigation-->
+    
+    <!--Main Layout-->
+    <main>
+        <div class="container-fluid mt-5">
+            <h2>Leave this portion and the footer to me :)</h2>
+            <div style="height: 2000px"></div>
+        </div>
+    </main>
+    <!--Main Layout-->
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/compiled.min.js"></script>
+    <!-- <script type="text/javascript" src="js/compiled.min474a.js?ver=4.4.0"></script> -->
+    <script>
+        
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+    </script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

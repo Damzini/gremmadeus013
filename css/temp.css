@@ -1,0 +1,19 @@
+/* YOUR CUSTOM STYLES */
+/* Small screen sm: 576px,*/
+@media only screen and (max-width: 576px) { 
+	.switch-to-side-a{
+		display: none;
+	}
+}
+
+/*Medium screen md: 768px*/
+@media only screen and (max-width: 768px) {
+}
+
+/*Large screen lg: 992px*/
+@media only screen and (min-width: 992px) { 
+}
+
+/*Extra large screen xl: 1200px*/
+@media only screen and (min-width: 1200px) { 
+}
